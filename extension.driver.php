@@ -48,11 +48,11 @@
 		}
 		
 		public function addFilterToEventEditor($context){
-			$context['options'][] = array('noediting', @in_array('noediting', $context['selected']) ,'No Editing of Entries');		
+			$context['options'][] = array('no-editing', @in_array('no-editing', $context['selected']) ,'No Editing of Entries');		
 		}
 		
 		public function addFilterDocumentationToEvent($context){
-			if(!in_array('noediting', $context['selected'])) return;
+			if(!in_array('no-editing', $context['selected'])) return;
 			
 			$context['documentation'][] = new XMLElement('h3', 'Prevent Editing');
 			
@@ -64,8 +64,8 @@
 			$context['documentation'][] = new XMLElement('p', 'If your forms are using a line like this, saving entries will always fail.');
 			
 			$context['documentation'][] = new XMLElement('p', 'The following is an example of the XML returned form this filter:');
-			$code = '<filter name="noediting" status="passed" />
-<filter name="noediting" status="failed">You are not allowed to edit entries.</filter>';
+			$code = '<filter name="no-editing" status="passed" />
+<filter name="no-editing" status="failed">You are not allowed to edit entries.</filter>';
 
 			$context['documentation'][] = contentBlueprintsEvents::processDocumentationCode($code);
 			
@@ -73,10 +73,10 @@
 		
 		public function processEventData($context){
 			
-			if(!in_array('noediting', $context['event']->eParamFILTERS)) return;
+			if(!in_array('no-editing', $context['event']->eParamFILTERS)) return;
 			
 			if(isset($_POST['id'])) {
-				$context['messages'][] = array('noediting', false, 'You are not allowed to edit entries.');
+				$context['messages'][] = array('no-editing', false, 'You are not allowed to edit entries.');
 			}
 			
 		}
