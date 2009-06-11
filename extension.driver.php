@@ -3,7 +3,7 @@
 	Class extension_noediting extends Extension{
 
 		public function about(){
-			return array('name' => 'No Editing of Entries Filter',
+			return array('name' => ' Filter: No Editing of Entries',
 						 'version' => '1.0',
 						 'release-date' => '2009-06-12',
 						 'author' => array('name' => 'Nils Werner',
