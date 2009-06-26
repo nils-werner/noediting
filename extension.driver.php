@@ -61,11 +61,9 @@
 
 			$context['documentation'][] = contentBlueprintsEvents::processDocumentationCode($code);
 			
-			$context['documentation'][] = new XMLElement('p', 'If your forms are using a line like this, saving entries will always fail.');
-			
 			$context['documentation'][] = new XMLElement('p', 'The following is an example of the XML returned form this filter:');
 			$code = '<filter name="no-editing" status="passed" />
-<filter name="no-editing" status="failed">You are not allowed to edit entries.</filter>';
+					<filter name="no-editing" status="failed">You are not allowed to edit entries.</filter>';
 
 			$context['documentation'][] = contentBlueprintsEvents::processDocumentationCode($code);
 			
