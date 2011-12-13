@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="noediting" status="unmaintained" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Filter: No Editing of Entries</name>
+	<description>Prevents users from editing existing entries via events</description>
+	<repo type="github">https://github.com/nils-werner/noediting</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/32927/</url>
+	<types>
+		<type>Events</type>
+	</types>
+	<authors>
+		<author>
+			<name github="nils-werner" symphony="phoque">Nils Werner</name>
+			<website>http://www.phoque.de/</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.0" date="2009-06-12" min="2.0.3">
+			Initial release.
+		</release>
+	</releases>
+</extension>

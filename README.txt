@@ -1,14 +1,15 @@
 
 No Editing of Entries Filter
-------------------------------------
+============================
 
-Version: 1.0
-Author: Nils Werner (http://www.phoque.de/projekte/symphony)
+Version: 1.1
+Author: Nils Werner
 Build Date: 12th Jun 2009
 Requirements: Symphony 2.0.2 or greater.
 
 
-[INSTALLATION]
+Installation
+------------
 
 1. Upload the 'noediting' folder in this archive to your Symphony 'extensions' folder.
 
@@ -19,8 +20,3 @@ Requirements: Symphony 2.0.2 or greater.
 4. Save the Event.
 
 5. Follow the directions at the bottom of your Event's documentation section
-
-
-[CHANGELOG]
-
-1.0 - Iniatial Release
