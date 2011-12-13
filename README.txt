@@ -2,10 +2,10 @@
 No Editing of Entries Filter
 ============================
 
-Version: 1.1
-Author: Nils Werner
-Build Date: 12th Jun 2009
-Requirements: Symphony 2.0.2 or greater.
+ - Version: 1.1
+ - Author: Nils Werner
+ - Build Date: 12th Jun 2009
+ - Requirements: Symphony 2.0.2 or greater.
 
 
 Installation
